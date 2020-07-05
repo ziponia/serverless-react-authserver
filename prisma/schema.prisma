@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model OAuthClient {
+  id            String @default(uuid()) @id
+  client_id     String
+  client_secret String
+  redirect_uri  String
+  scope         String
+}
