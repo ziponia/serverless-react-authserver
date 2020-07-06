@@ -32,6 +32,8 @@ provider:
   region: region, 'ap-northeast-2'
   apiGateway:
     minimumCompressionSize: 1024 # Enable gzip compression for responses > 1 KB
+    binaryMediaTypes:
+      - "*/*"
   environment:
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
 

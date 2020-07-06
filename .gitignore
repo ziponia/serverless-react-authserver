@@ -8,5 +8,7 @@ jspm_packages
 # Webpack directories
 .webpack
 .env
-lib
+# lib
 *.lock
+sls-next-build
+.next
